@@ -1,0 +1,4 @@
+name: PinkyTest
+version: '${project.version}'
+main: me.bunnykick.pinkytest.PinkyTest
+api-version: '1.20'
