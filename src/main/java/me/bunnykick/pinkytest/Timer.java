@@ -41,7 +41,7 @@ public class Timer implements Runnable {
                 continue;
             }
             if(item.isOnGround()) {
-                Bukkit.getPluginManager().callEvent(new ItemLandedOnGroundEvent(item.getItem(), item.getThrew()));
+                Bukkit.getPluginManager().callEvent(new ItemLandedOnGroundEvent(item.getItem(), item.getThrower()));
                 iterator.remove();
             }
         }

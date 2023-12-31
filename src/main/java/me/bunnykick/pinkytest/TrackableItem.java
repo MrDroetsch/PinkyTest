@@ -5,23 +5,23 @@ import org.bukkit.entity.Player;
 
 public class TrackableItem {
     private Item item;
-    private Player threw;
+    private Player thrower;
 
-    public TrackableItem(Item item, Player threw) {
+    public TrackableItem(Item item, Player thrower) {
         setItem(item);
-        setThrew(threw);
+        setThrower(thrower);
     }
 
-    public Player getThrew() {
-        return threw;
+    public Player getThrower() {
+        return thrower;
     }
 
     public Item getItem() {
         return item;
     }
 
-    private void setThrew(Player threw) {
-        this.threw = threw;
+    private void setThrower(Player thrower) {
+        this.thrower = thrower;
     }
 
     private void setItem(Item item) {
